@@ -3,14 +3,57 @@ $text-color: #81818B;
 $title-color: #fff;
 $body-bg: #0D0D11;
 $main-button-bg: #3D96F4;
+$button-hover: #040ca1;
 $button-bg: rgba(129, 129, 139, 0.2);
 $item-bg: rgba(129, 129, 139, 0.1);
 
-
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,500&display=swap);
 
 body {
    font-family: 'Poppins', sans-serif;
    font-weight: 300;
    line-height: 1.5;
    color: $main-text-color;
+   background-color: $body-bg;
+}
+
+.wrapper {
+   min-height: 100vh;
+   overflow: clip;
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+}
+
+[class*='__container'] {
+   max-width: 81.875rem;
+   margin: auto;
+   padding: 0 15px;
+}
+
+.title {
+   font-size: 3.2rem;
+   color: $title-color;
+   line-height: 1.19;
+   font-weight: 500;
+}
+
+.button {
+   display: inline-block;
+   text-align: center;
+   background-color: $main-button-bg;
+   color: $title-color;
+   font-size: 0.875rem;
+   line-height: 1.44;
+   letter-spacing: 0.14em;
+   border-radius: 3.57em;
+   padding: 1.14em 2.14em;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   flex: 0 0 auto;
+   transition: background-color 0.3s ease 0s;
+   &:hover {
+      background-color: $button-hover;
+   }
+   @media (max-width: 70.85em) {
+      padding: 1em 1.42em;
+   }
 }
