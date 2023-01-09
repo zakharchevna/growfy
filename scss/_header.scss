@@ -4,6 +4,7 @@
    left: 0;
    width: 100%;
    background-color: $header-bg;
+   z-index: 50;
    &__container {
       display: flex;
       column-gap: 2.25em;
@@ -11,11 +12,11 @@
       align-items: center;
       padding-top: 5px;
       padding-bottom: 5px;
-      @media (max-width: 61.99em) {
+      @media (max-width: 61.998em) {
          column-gap: 1.56em;
          min-height: 5.625rem;
       }
-      @media (max-width: 47.99em) {
+      @media (max-width: 47.998em) {
          min-height: 4.375rem;
          column-gap: 0.875em;
       }
@@ -46,7 +47,7 @@
    }
 
    &__body {
-      @media(max-width: 47.99em) {
+      @media(max-width: 47.998em) {
          position: fixed;
          width: 100%;
          height: 100%;
@@ -76,10 +77,10 @@
       justify-content: flex-end;
       column-gap: 2.25em;
       row-gap: 3px;
-      @media (max-width: 61.99em) {
+      @media (max-width: 61.998em) {
          column-gap: 1.56em;
       }
-      @media (max-width: 47.99em) {
+      @media (max-width: 47.998em) {
          flex-direction: column;
          justify-content: center;
          text-align: center;
@@ -91,10 +92,21 @@
    &__link {
       line-height: 1.625;
       color: $title-color;
-      &:hover {
-         text-decoration: underline;
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 0;
+         height: 2px;
+         transition: width 0.3s ease-in 0s;
+         background-color: $main-button-bg;
       }
-      @media (max-width: 47.99em) {
+      &:hover::after {
+         width: 100%;
+      }
+      @media (max-width: 47.998em) {
          font-size: 2rem;
       }
    }
@@ -134,7 +146,7 @@
 
 .icon-menu {
    display: none;
-   @media(max-width: 47.99em) {
+   @media(max-width: 47.998em) {
       display: block;
       flex: 0 0 30px;
       height: 18px;
