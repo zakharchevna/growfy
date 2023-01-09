@@ -2,6 +2,7 @@ $main-text-color: #9C9C9C;
 $text-color: #81818B;
 $title-color: #fff;
 $body-bg: #0D0D11;
+$header-bg: #0d0d1193;
 $main-button-bg: #3D96F4;
 $button-hover: #040ca1;
 $button-bg: rgba(129, 129, 139, 0.2);
@@ -53,7 +54,7 @@ body {
    &:hover {
       background-color: $button-hover;
    }
-   @media (max-width: 70.85em) {
+   @media (max-width: 61.99em) {
       padding: 1em 1.42em;
    }
 }
