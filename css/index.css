@@ -141,6 +141,25 @@ body {
 .button_contact-us {
   background-color: rgba(129, 129, 139, 0.2);
 }
+.button_contact-us:hover {
+  background-color: rgba(129, 129, 139, 0.1);
+}
+
+.suptitle {
+  display: inline-block;
+  font-size: 0.687rem;
+  line-height: 1.55;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: inherit;
+  border: 1px solid rgba(129, 129, 139, 0.2);
+  border-radius: 1.09em;
+  padding: 1em 2em;
+  transition: border 0.3s ease 0s;
+}
+.suptitle:hover {
+  border: 1px dotted #040ca1;
+}
 
 .header {
   position: fixed;
@@ -495,4 +514,95 @@ body {
 .clients__item img:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.services__container {
+  display: flex;
+  gap: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+@media (max-width: 68.75em) {
+  .services__container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 61.998em) {
+  .services__container {
+    padding-top: 3rem;
+    padding-bottom: 3.1rem;
+  }
+}
+@media (max-width: 47.998em) {
+  .services__container {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+.services__content {
+  flex: 0 1 50%;
+  align-self: center;
+}
+.services__items {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 38.75em) {
+  .services__items {
+    flex-direction: column;
+  }
+}
+@media (min-width: 67.988em) {
+  .services__column:first-child {
+    padding-top: 3rem;
+  }
+}
+.services__item {
+  transition: border 0.3s ease 0s;
+  background-color: rgba(129, 129, 139, 0.1);
+  border-radius: 2rem;
+}
+.services__item:hover {
+  border: 1px dotted #040ca1;
+}
+
+.header-services__suptitle:not(:last-child) {
+  margin-bottom: 1.72em;
+}
+.header-services__title:not(:last-child) {
+  margin-bottom: 0.235em;
+}
+@media (min-width: 67.998em) {
+  .header-services__text {
+    max-width: 30.62rem;
+  }
+}
+.header-services__text:not(:last-child) {
+  margin-bottom: 1.833em;
+}
+@media (max-width: 37em) {
+  .header-services__button {
+    display: block;
+  }
+}
+
+.item-service {
+  padding: 3.44rem 1.562rem;
+}
+.item-service:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.item-service__icon:not(:last-child) {
+  margin-bottom: 0.789em;
+}
+.item-service__title {
+  font-size: 1.187rem;
+  font-weight: 400;
+  line-height: 1.42;
+  color: #fff;
+}
+.item-service__title:not(:last-child) {
+  margin-bottom: 0.526em;
 }

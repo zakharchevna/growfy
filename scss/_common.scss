@@ -65,5 +65,24 @@ body {
    }
    &_contact-us {
       background-color: $button-bg;
+      &:hover {
+         background-color: $item-bg;
+      }
+   }
+}
+
+.suptitle {
+   display: inline-block;
+   font-size: 0.687rem;
+   line-height: 1.55;
+   letter-spacing: 0.18em;
+   text-transform: uppercase;
+   color: inherit;
+   border: 1px solid $button-bg;
+   border-radius: 1.09em;
+   padding: 1em 2em;
+   transition: border 0.3s ease 0s;
+   &:hover {
+      border: 1px dotted $button-hover;
    }
 }
