@@ -20,9 +20,17 @@
    }
 
    &__items {
-      display: flex;
+      display: grid;
       gap: 3rem;
-      flex-wrap: wrap;
+      grid-template-columns: repeat(3, 1fr);
+      @media (max-width:68.75em) {
+         gap: 2rem;
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width:47.75em) {
+         row-gap: 1rem;
+         grid-template-columns: 1fr;
+      }
    }
 }
 .content-testimonials {
@@ -60,27 +68,21 @@
          align-self: flex-start;
       }
    }
-
-   &__button {
-      
-   }
 }
-.testimonial {
 
-   &__item {
-   }
-}
 .item-testimonial {
    background-color: $item-bg;
    padding: 4rem 2.5rem 5.25rem 2.5rem;
-   display: grid;
+   display: flex;
+   flex-direction: column;
    gap: 2.125rem;
    border-radius: 1.875rem;
-   max-width: 24.62rem;
+   &:hover {
+      border: 1px dotted $button-hover;
+   }
    @media (max-width: 61.998em) {
       gap: 1.125rem;
-   }
-   &__user {
+      padding: 2.15rem 1.5rem 2.25rem 1.5rem;
    }
 
    &__title {
@@ -88,12 +90,19 @@
       font-size: 2rem;
       line-height: 1.4;
       color: $title-color;
+      @media (max-width:47.998em) {
+         font-size: 1.4rem;
+      }
    }
 
    &__description {
+      flex: 1 1 auto;
    }
 
    &__raiting {
+      & img {
+         max-width: 100%;
+      }
    }
 }
 .user-testimonial {
@@ -102,18 +111,28 @@
    align-items: center;
 
    &__avatar {
+      overflow: hidden;
       flex: 0 0 4.25rem;
+      &_1 {
+         border-radius: 0 50% 50% 50%;
+      }
+      &_2 {
+         border-radius: 50% 0 50% 50%;
+      }
+      &_3 {
+         border-radius: 50% 50% 0 50%;
+      }
       & img {
          max-width: 100%;
+         transform: scale(1.023);
       }
    }
 
-   &__body {
-   }
-
    &__name {
+      color: $title-color;
    }
 
    &__company-name {
+      font-size: 0.875rem;
    }
 }
