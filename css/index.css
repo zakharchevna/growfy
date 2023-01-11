@@ -131,7 +131,7 @@ body {
   transition: background-color 0.3s ease 0s;
 }
 .button:hover {
-  background-color: #040ca1;
+  background-color: #1375de;
 }
 @media (max-width: 61.998em) {
   .button {
@@ -158,7 +158,7 @@ body {
   transition: border 0.3s ease 0s;
 }
 .suptitle:hover {
-  border: 1px dotted #040ca1;
+  border: 1px dotted #1375de;
 }
 
 .header {
@@ -554,7 +554,7 @@ body {
     flex-direction: column;
   }
 }
-@media (min-width: 67.988em) {
+@media (min-width: 61.988em) {
   .services__column:first-child {
     padding-top: 3rem;
   }
@@ -565,7 +565,7 @@ body {
   border-radius: 2rem;
 }
 .services__item:hover {
-  border: 1px dotted #040ca1;
+  border: 1px dotted #1375de;
 }
 
 .header-services__suptitle:not(:last-child) {
@@ -574,7 +574,7 @@ body {
 .header-services__title:not(:last-child) {
   margin-bottom: 0.235em;
 }
-@media (min-width: 67.998em) {
+@media (min-width: 61.998em) {
   .header-services__text {
     max-width: 30.62rem;
   }
@@ -605,4 +605,159 @@ body {
 }
 .item-service__title:not(:last-child) {
   margin-bottom: 0.526em;
+}
+
+.why__container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  row-gap: 2rem;
+}
+@media (max-width: 61.998em) {
+  .why__container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 47.998em) {
+  .why__container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.why__gallery {
+  flex: 0 1 50%;
+}
+.why__content {
+  flex: 0 1 50%;
+  align-self: center;
+}
+.why__suptitle:not(:last-child) {
+  margin-bottom: 3.9em;
+}
+@media (max-width: 47.998em) {
+  .why__suptitle:not(:last-child) {
+    margin-bottom: 1.8em;
+  }
+}
+.why__title:not(:last-child) {
+  margin-bottom: 0.784em;
+}
+@media (min-width: 61.998em) {
+  .why__text {
+    max-width: 30.625rem;
+  }
+}
+.why__text:not(:last-child) {
+  margin-bottom: 1.94em;
+}
+.why__list li {
+  position: relative;
+  min-height: 2rem;
+  padding-left: 2.5rem;
+  padding-top: 2px;
+}
+.why__list li:not(:last-child) {
+  margin-bottom: 1em;
+}
+.why__list li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background: rgba(129, 129, 139, 0.1) url("../img/icons/checked.svg") center no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+
+.gallery-why {
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+}
+.gallery-why::before {
+  content: "";
+  background: url("../img/dots-decor.svg") 0 0/100% no-repeat;
+  width: 7.625rem;
+  height: 7.625rem;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+.gallery-why__item {
+  overflow: hidden;
+}
+.gallery-why__item img {
+  max-width: 100%;
+  border-radius: 88% 0 49% 49%/50% 0 31% 31%;
+  position: relative;
+  z-index: 6;
+}
+.gallery-why__item_bottom {
+  align-self: flex-end;
+}
+.gallery-why__item_bottom img {
+  border-radius: 50% 50% 50% 0;
+}
+
+.advantages__container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 61.998em) {
+  .advantages__container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 47.998em) {
+  .advantages__container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.advantages__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  flex: 1 1 auto;
+}
+@media (max-width: 40.62em) {
+  .advantages__items {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+}
+.advantages__item {
+  background-color: rgba(129, 129, 139, 0.1);
+  padding: 2.5rem;
+  border-radius: 1.875rem;
+}
+.advantages__item:hover {
+  border: 1px dotted #1375de;
+}
+.advantages__value:not(:last-child) {
+  margin-bottom: 0.627em;
+}
+.advantages__description {
+  font-size: 1.125rem;
+}
+.advantages__gallery {
+  flex: 0 0 38%;
+}
+@media (max-width: 61.998em) {
+  .advantages__gallery {
+    align-self: center;
+  }
+}
+.advantages__gallery img {
+  max-width: 100%;
+  border-radius: 0% 67% 60% 60%/0% 67% 50% 50%;
 }

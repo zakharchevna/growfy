@@ -34,7 +34,7 @@
    }
 
    &__column {
-      @media (min-width: 67.988em) {
+      @media (min-width: 61.988em) {
          &:first-child {
          padding-top: 3rem;
          }
@@ -65,7 +65,7 @@
    }
 
    &__text {
-      @media (min-width: 67.998em) {
+      @media (min-width: 61.998em) {
          max-width: 30.62rem;
       }
       &:not(:last-child) {
