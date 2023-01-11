@@ -895,3 +895,55 @@ body {
 .user-testimonial__company-name {
   font-size: 0.875rem;
 }
+
+.blog__container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media (max-width: 61.998em) {
+  .blog__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 47.998em) {
+  .blog__container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.content-blog {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 61.998em) {
+  .content-blog {
+    flex-direction: column;
+  }
+}
+.content-blog__body {
+  flex: 1 1 auto;
+}
+.content-blog__suptitle:not(:last-child) {
+  margin-bottom: 2.272em;
+}
+.content-blog__title:not(:last-child) {
+  margin-bottom: 0.23em;
+}
+.content-blog__description {
+  font-size: 1.125rem;
+}
+@media (min-width: 62em) {
+  .content-blog__description {
+    max-width: 46rem;
+  }
+}
+.content-blog__actions {
+  flex: 0 0 auto;
+  align-self: flex-end;
+}
+@media (max-width: 61.998em) {
+  .content-blog__actions {
+    align-self: flex-start;
+  }
+}
