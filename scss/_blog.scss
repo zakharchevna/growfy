@@ -86,7 +86,7 @@
    min-height: 100%;
    transition: box-shadow 0.3s ease 0s;
    &:hover {
-      box-shadow: 2px 2px 15px $blog-date-color;
+      box-shadow: 2px 2px 15px $menu-item-hover;
       cursor: pointer;
    }
 
@@ -98,26 +98,16 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      background: $category-link-bg;
+      background-color: $category-link-bg;
       border-radius: 0 0.625rem 0 0;
       text-transform: capitalize;
       font-size: 0.875rem;
       color: $title-color;
       line-height: 1.57;
       padding: 0.625rem;
-      transition: transform 3s ease 1s;
-      &::after {
-         content: "";
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         width: 0;
-         height: 2px;
-         transition: width 0.3s ease-in 0s;
-         background-color: $main-button-bg;
-      }
-      &:hover::after {
-         width: 100%;
+      transition: background-color 2s ease 0s;
+      &:hover {
+         background-color: $body-bg;
       }
    }
 
@@ -163,19 +153,6 @@
       color: $title-color;
       font-weight: 400;
       position: relative;
-      &::after {
-         content: "";
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         width: 0;
-         height: 1px;
-         transition: width 0.5s ease-in 0s;
-         background-color: $main-button-bg;
-      }
-      &:hover::after {
-         width: 310%;
-      }
    }
 
    &__text {
@@ -192,18 +169,9 @@
       line-height: 1.57;
       font-size: 0.875rem;
       position: relative;
-      &::after {
-         content: "";
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         width: 0;
-         height: 1px;
-         transition: width 0.3s ease-in 0s;
-         background-color: $main-button-bg;
-      }
-      &:hover::after {
-         width: 22%;
+      max-width: 30%;
+      &:hover {
+         color: $item-border-hover;
       }
    }
 }

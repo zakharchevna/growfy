@@ -109,8 +109,8 @@
       color: $placeholder-color;
       transition: all 0.3s ease 0s;
       &:hover {
-         border: 1px solid $placeholder-color;
-         box-shadow: 1px 1px 10px $category-link-bg;
+         border: 1px solid  $placeholder-color;
+         box-shadow: 1px 1px 312.5rem $button-hover;
       }
    }
 }

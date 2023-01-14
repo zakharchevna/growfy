@@ -81,6 +81,21 @@
 }
 
 .item-service {
+   &_2 {
+      &:hover {
+         border: 1px solid $item-border-hover;
+      }
+   }
+   &_3 {
+      &:hover {
+         border: 1px solid $services-border-hover;
+      }
+   }
+   &_4 {
+      &:hover {
+         border: 1px solid $logo-green-color;
+      }
+   }
    padding: 3.44rem 1.562rem;
    &:not(:last-child) {
       margin-bottom: 2rem;

@@ -7,9 +7,13 @@ $main-button-bg: #3D96F4;
 $button-hover: #1375de;
 $button-bg: rgba(129, 129, 139, 0.2);
 $item-bg: rgba(129, 129, 139, 0.1);
+$item-border-hover: #FF6D35;
+$services-border-hover: #FFCD1D;
+$logo-green-color: #5CC97B;
 $category-link-bg: rgba(129, 129, 139, 0.5);
 $blog-date-color: rgba(129, 129, 139, 0.9);
 $read-more-link-color: #3D96F4;
+$menu-item-hover: #7ed0ff;
 $placeholder-color: #999999;
 
 
@@ -88,6 +92,6 @@ body {
    padding: 1em 2em;
    transition: border 0.3s ease 0s;
    &:hover {
-      border: 1px dotted $button-hover;
+      border: 1px dotted $menu-item-hover;
    }
 }
