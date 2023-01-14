@@ -1,0 +1,130 @@
+.footer {
+
+   &__main {
+   }
+
+   &__bottom {
+   }
+}
+.main-footer {
+
+   padding-top: 10rem;
+   padding-bottom: 10rem;
+   @media (max-width: 61.998em) {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+   }
+   @media (max-width: 47.998em) {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+   }
+
+   &__container {
+      display: grid;
+      column-gap: 4rem;
+      grid-template-columns: minmax(auto, 23.625rem) auto auto minmax(auto, 23.625rem);
+   }
+
+   &__column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   &__logo {
+   
+   }
+
+   &__logo,
+   &__social {
+      & img {
+         max-width: 100%;
+      }
+   }
+
+   &__text {
+   }
+
+   &__social {
+   }
+
+   &__label {
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+      color: $title-color;
+      // &:not(:last-child) {
+      //    margin-bottom: 1.5em;
+      // }
+   }
+
+   &__menu {
+   }
+
+   &__subscribe {
+   }
+}
+.social {
+   display: flex;
+   gap: 1rem;
+   &__link {
+      flex: 0 0 2.25rem;
+      height: 2.25rem;
+      border: 1px solid rgba(129, 129, 139, 0.9);
+      border-radius: 2.25rem;
+      display: grid;
+      place-items: center;
+      transition: all 0.3s ease 0s;
+      &:hover {
+         box-shadow: 2px 2px 15px $blog-date-color;
+         border: 1px solid $title-color;
+         cursor: pointer;
+      }
+   }
+}
+.menu-footer {
+
+   &__list {
+      display: grid;
+      gap: 1.5rem;
+   }
+
+   &__item {
+   }
+
+   &__link {
+      line-height: 1.6;
+      color: inherit;
+      &:hover {
+         color: $title-color;
+      }
+   }
+}
+.subscribe {
+   display: flex;
+   gap: 1rem;
+   &__input {
+      border: 1px solid $button-bg;
+      border-radius: 3.125rem;
+      background-color: transparent;
+      padding: 1rem 2rem;
+      color: $placeholder-color;
+      &:hover {
+         background-color: $item-bg;
+         cursor: pointer;
+      }
+   }
+
+   &__button {
+   }
+}
+
+.bottom-footer {
+
+   &__container {
+   }
+
+   &__copyright {
+   }
+}
